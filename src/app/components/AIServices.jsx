@@ -1,8 +1,18 @@
+"use client";
+import useInViewOnce from "./useInViewOnce";
+import Image from "next/image";
+
 export default function AIServices() {
+  const { ref, isVisible } = useInViewOnce();
   return (
     <>
       {/* MAIN SECTION */}
-      <section className="relative bg-[#EEF1FA] py-10 pb-40 overflow-visible">
+      <section
+        ref={ref}
+        className={`relative bg-neutral-50 py-10 pb-40 overflow-visible transition-all duration-700 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+        }`}
+      >
         
         {/* dotted decorations */}
         <div className="absolute right-16 top-16 grid grid-cols-4 gap-6">
@@ -19,39 +29,61 @@ export default function AIServices() {
 
         {/* container */}
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-3xl font-semibold text-gray-900">
-            Our Services in
-          </h2>
-          <h3 className="text-3xl font-semibold text-blue-800 mt-1">
-            Artificial Intelligence
-          </h3>
+          <h2 className="text-3xl font-semibold text-black">Services</h2>
+          <h3 className="text-3xl font-semibold text-blue-600 mt-1">built to drive measurable growth</h3>
         </div>
 
         {/* OVERLAPPING cards */}
         <div className=" absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-1/2 w-full max-w-5xl px-6 z-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             
-            <div className="bg-white rounded-2xl  p-8 text-left hover:scale-105 transition shadow-[0_0_30px_rgba(0,0,0,0.15)]">
-              <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-                AI
+            <div className={`bg-white rounded-2xl p-8 text-left transition shadow-[0_0_30px_rgba(0,0,0,0.12)] ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            } hover:scale-105`}>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full bg-black ring-2 ring-blue-600/15">
+                  <Image
+                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=256&h=256&fit=crop&q=80"
+                    alt="Web development"
+                    fill
+                    className="object-cover"
+                    sizes="48px"
+                  />
+                </div>
+                <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-600/10">
+                  Web
+                </div>
               </div>
               <h4 className="text-lg font-semibold mb-2">
-                AI-Powered App and Web Development
+                Web Development
               </h4>
-              <p className="text-gray-600">
-                We build intelligent digital products with AI at the core.
+              <p className="text-neutral-600">
+                High-performance sites and web apps with clean UX, great SEO foundations, and conversion tracking from day one.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 text-left hover:scale-105 transition shadow-[0_0_30px_rgba(0,0,0,0.15)]">
-              <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-                🧠
+            <div className={`bg-white rounded-2xl p-8 text-left transition shadow-[0_0_30px_rgba(0,0,0,0.12)] ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            } hover:scale-105`}>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative h-12 w-12 overflow-hidden rounded-full bg-black ring-2 ring-blue-600/15">
+                  <Image
+                    src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=256&h=256&fit=crop&q=80"
+                    alt="SEO"
+                    fill
+                    className="object-cover"
+                    sizes="48px"
+                  />
+                </div>
+                <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-600/10">
+                  SEO
+                </div>
               </div>
               <h4 className="text-lg font-semibold mb-2">
-                Full-Service Machine Learning Product Development
+                SEO (Search Engine Optimization)
               </h4>
-              <p className="text-gray-600">
-                From ideation to deployment, production-ready ML solutions.
+              <p className="text-neutral-600">
+                Technical SEO, content structure, and on-page systems that grow qualified traffic (and prove ROI with analytics).
               </p>
             </div>
 
@@ -60,33 +92,59 @@ export default function AIServices() {
       </section>
 
       {/* SPACER (VERY IMPORTANT) */}
-    <div className="h-80 md:h-40"></div>
+    <div className="h-96 md:h-48"></div>
 
       {/* NORMAL cards BELOW */}
-      <section className="bg-white ">
+      <section className="bg-white pb-10 sm:pb-16">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
 
-           <div className="bg-white rounded-2xl p-8 text-left hover:scale-105 transition shadow-[0_0_30px_rgba(0,0,0,0.15)]">
-            <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-              ⚙️
+           <div className={`bg-white rounded-2xl p-8 text-left transition shadow-[0_0_30px_rgba(0,0,0,0.12)] ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            } hover:scale-105`}>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="relative h-12 w-12 overflow-hidden rounded-full bg-black ring-2 ring-blue-600/15">
+                <Image
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=256&h=256&fit=crop&q=80"
+                  alt="Mobile app development"
+                  fill
+                  className="object-cover"
+                  sizes="48px"
+                />
+              </div>
+              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-600/10">
+                Mobile
+              </div>
             </div>
             <h4 className="text-lg font-semibold mb-2">
-              AI Infrastructure & MLOps
+              Mobile App Development
             </h4>
-            <p className="text-gray-600">
-              We design scalable AI infrastructure and MLOps pipelines.Full-Service Machine Learning Product Development
+            <p className="text-neutral-600">
+              iOS/Android apps designed for retention — MVP to production with auth, payments, push, and analytics baked in.
             </p>
           </div>
 
-         <div className="bg-white rounded-2xl p-8 text-left hover:scale-105 transition shadow-[0_0_30px_rgba(0,0,0,0.15)]">
-            <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-4">
-              📊
+         <div className={`bg-white rounded-2xl p-8 text-left transition shadow-[0_0_30px_rgba(0,0,0,0.12)] ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            } hover:scale-105`}>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="relative h-12 w-12 overflow-hidden rounded-full bg-black ring-2 ring-blue-600/15">
+                <Image
+                  src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=256&h=256&fit=crop&q=80"
+                  alt="AI automation"
+                  fill
+                  className="object-cover"
+                  sizes="48px"
+                />
+              </div>
+              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-600/10">
+                AI
+              </div>
             </div>
             <h4 className="text-lg font-semibold mb-2">
-              Data Strategy & Analytics
+              AI / Machine Learning / Deep Learning
             </h4>
-            <p className="text-gray-600">
-              Turn raw data into insights with AI-driven analytics.
+            <p className="text-neutral-600">
+              AI that ships: copilots, automation, RAG chatbots, and forecasting — built with guardrails, evals, and clear impact.
             </p>
           </div>
 

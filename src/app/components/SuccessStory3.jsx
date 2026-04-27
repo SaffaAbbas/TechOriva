@@ -4,18 +4,18 @@ import CaseCard from "./CaseCard";
 export default function SuccessStory3() {
   const cases = [
     {
-      image: '/images.jfif',
-      title: 'Revolutionizing Diagnostics for Biotech',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop&q=80',
+      title: 'Mobile App MVP Shipped in Weeks',
       description:
-        'We helped a leading biotech company label, classify, and grade echocardiograms using advanced machine learning models. Our solution signficantly improved diagnostic accuracy and dramatically reduced manual processing time.',
-      link: '/blog3',
+        'We designed a clean onboarding flow, shipped core features, and set up analytics so the team could iterate with confidence post-launch.',
+      link: '/blog2',
     },
     {
-      image: '/rayban.jpg',
-      title: 'Maximizing Amazon Presence for Ray-Ban',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80',
+      title: 'AI Support Copilot for Faster Resolutions',
       description:
-        'Our team used generative AI to automate responses, manage PPC ads, and handle customer inquiries for Ray-Bam. This substantially streamlined their operations and markedly boosted their ROI on Amazon.',
-      link: '/blog2',
+        'We shipped an internal RAG copilot that answers support questions with citations, reducing time-to-answer and improving consistency across the team.',
+      link: '/blog3',
     },
   ];
 

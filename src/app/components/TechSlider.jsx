@@ -1,4 +1,5 @@
 'use client';
+import useInViewOnce from "./useInViewOnce";
 
 const technologies = [
   { name: "Airtable", logo: "https://cdn.simpleicons.org/airtable/18BFFF" },
@@ -26,12 +27,18 @@ const technologies = [
 export default function TechSlider({ showHeading = true, bgColor = "bg-white", heightClass = "py-12" }) {
   const doubled = [...technologies, ...technologies];
   const isWhite = bgColor === "bg-white";
+  const { ref, isVisible } = useInViewOnce();
 
   return (
-    <section className={`${heightClass} ${bgColor} overflow-hidden`}>
+    <section
+      ref={ref}
+      className={`${heightClass} ${bgColor} overflow-hidden transition-all duration-700 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+      }`}
+    >
       {showHeading && (
-        <h2 className="text-center text-2xl md:text-2xl font-semibold text-gray-900 mb-10">
-          Technologies <span className="text-indigo-800">We Work With</span>
+        <h2 className="text-center text-2xl md:text-2xl font-semibold text-black mb-10">
+          Technologies <span className="text-blue-600">we ship with</span>
         </h2>
       )}
 

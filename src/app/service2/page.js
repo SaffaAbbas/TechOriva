@@ -10,37 +10,38 @@ export default function Services() {
     return (
         <>
             <ServiceHero2
-                badgeText="Large-Language-Model & GPT Integration"
-                title="Transforming Conversations and Automating Workflows"
-                description="At GenAI Labs, we specialize in making LLMs work for your business. Whether it’s designing an advanced chatbot system, automating routine workflows, or enhancing the way you engage with customers, our team of experts tailors every solution to your specific needs, ensuring that your AI investments drive real results."
-                imageSrc="/openai.jfif"
+                badgeText="SEO (Search Engine Optimization)"
+                title="SEO that compounds — built on systems."
+                description="We fix the technical foundation, build content structures that match search intent, and ship an on-page playbook your team can repeat. The goal isn’t vanity traffic — it’s qualified demand, better leads, and predictable inbound growth you can measure."
+                buttonText="Get an SEO roadmap"
+                imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=900&fit=crop&q=80"
             />
             <WhatWeOffer
                 services={[
                     {
-                        title: "Discovery and Strategy",
-                        desc: "We begin by understanding your business goals, challenges, and user needs. Through strategic discovery sessions, we identify the most effective applications of LLMs for your industry. We’ll work with you to set achievable goals, map key performance metrics, and create a project roadmap that aligns with your objectives.",
-                        img: "/consult.webp",
+                        title: "Technical SEO audit",
+                        desc: "Indexing, crawl, Core Web Vitals, site architecture, and templates — we fix the issues that silently cap rankings and slow growth.",
+                        img: "https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Custom AI Design and Prototyping",
-                        desc: "With cutting-edge tools and methods, we build prototypes that illustrate how LLMs can enhance your operations. We craft user-friendly, responsive designs and construct model architectures tailored to your business, including pipeline setups for seamless data integration.",
-                        img: "/design.jfif",
+                        title: "Content strategy + information architecture",
+                        desc: "We map your services to high-intent keywords and build a content structure that’s easy to navigate for humans and search engines (so Google understands what you do).",
+                        img: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Development and Optimization",
-                        desc: "Our team handles the end-to-end development of your LLM solution, from training custom models to integrating APIs for smooth functionality within your platform. We rigorously test and fine-tune to ensure optimal accuracy, relevance, and scalability, delivering an AI that works seamlessly in real-world conditions.",
-                        img: "development.webp",
+                        title: "On-page + conversion improvements",
+                        desc: "Better titles, headings, internal linking, schema, and CTA placement — so the traffic you earn actually turns into leads and pipeline.",
+                        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Deployment and Adaptations",
-                        desc: "When your product is ready, we manage the deployment process, integrating it directly into your workflows. Our experience with cloud solutions ensures easy scalability to meet growing demands, while our adaptable architectures allow for easy expansion and enhancement.",
-                        img: "/scaling.webp",
+                        title: "Editorial system",
+                        desc: "Brief templates, publishing guidelines, and a repeatable cadence so your team can scale content without guesswork (and without losing quality).",
+                        img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Ongoing Support and Evolution",
-                        desc: "We understand that LLMs thrive with ongoing improvements. Our support services include monitoring, regular updates, and optimizations to ensure that your AI remains reliable and up-to-date. We’re committed to a long-term partnership, keeping your AI solution effective as your business evolves.",
-                        img: "support.webp",
+                        title: "Reporting that ties to revenue",
+                        desc: "Rankings matter, but we focus on pipeline. You’ll get reporting on the pages and keywords that create real opportunities, plus next actions every month.",
+                        img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=520&fit=crop&q=80",
                     },
                 ]} />
             <SuccessStory2 />

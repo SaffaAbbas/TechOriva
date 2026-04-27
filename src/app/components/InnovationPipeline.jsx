@@ -50,16 +50,16 @@ export default function InnovationPipeline() {
                 Our Process
               </p>
               <h2 className="text-4xl md:text-4xl font-bold text-gray-900 leading-tight">
-                Our Proprietary Innovation Pipeline
+                A simple, senior-led delivery pipeline
               </h2>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              At Tech Originators, innovation drives how we build, test, and deliver intelligent solutions. Our proprietary innovation pipeline ensures a methodical, risk-managed approach from discovery to product integration, with continuous validation to maximize efficiency and impact.
+              OrbitMint Studio runs a tight process built for clarity and speed: define the outcome, design the system, ship in iterations, then optimize based on real data.
             </p>
 
             <p className="text-base font-medium text-gray-800">
-              Here's how our innovation pipeline works across each stage of the development process:
+              Here&apos;s how our process works across each stage:
             </p>
           </div>
 

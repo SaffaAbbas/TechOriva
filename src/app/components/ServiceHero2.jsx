@@ -3,13 +3,8 @@ import Image from "next/image";
 export default function ServiceHero2({
   badgeText = "Full-Service Machine Learning Product Development",
   title = "Turning Vision into Reality",
-  description = `At Tech Originators Studio we’re passionate about bringing AI ideas to life. 
-With over a decade of experience, our team of experts is dedicated 
-to guiding you through every step of the machine learning product 
-development process. Whether you have a fully formed concept or 
-just an idea, we will work with you to create a tailored solution 
-that meets your needs and exceeds your expectations.`,
-  buttonText = "Talk to an AI Expert",
+  description = `TECHORIVA helps teams design, build, and grow digital products — fast, measurable, and without agency chaos.`,
+  buttonText = "Book a free consult",
   imageSrc = "/openai.jfif",
   bgColor = "bg-[#eef1fb]",
   onButtonClick,
@@ -42,13 +37,14 @@ that meets your needs and exceeds your expectations.`,
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center rounded-full">
+        <div className="relative flex justify-center lg:justify-end">
           <Image
             src={imageSrc}
             alt={title}
-            width={520}
-            height={520}
-            className="object-contain"
+            width={360}
+            height={360}
+            sizes="(max-width: 1024px) 280px, 360px"
+            className="object-cover rounded-2xl shadow-[0_22px_60px_rgba(0,0,0,0.14)] ring-1 ring-black/5 w-[260px] h-[260px] sm:w-[280px] sm:h-[280px] lg:w-[360px] lg:h-[360px]"
             priority
           />
         </div>

@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function CaseHero({
   badge = "Case Studies",
-  heading = "We Love What We Do",
-  description = "See how our tailored solutions drive real results, empowering businesses to excel and innovate."
+  heading = "Work that moves metrics",
+  description = "A few recent examples of how TECHORIVA helps teams ship faster, improve conversion, and build repeatable growth systems."
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);

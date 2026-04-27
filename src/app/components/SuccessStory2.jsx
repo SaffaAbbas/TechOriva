@@ -4,17 +4,17 @@ import CaseCard from "./CaseCard";
 export default function SuccessStory2() {
   const cases = [
     {
-      image: '/now.png',
-      title: 'Transforming Support for Enterprise Software',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80',
+      title: 'AI Support Copilot for Faster Resolutions',
       description:
-        'We developed a Large-Language Model chatbot for ServiceNow that enabled support engineers to access real-time client performance data through natural language queries, doubling efficiency and achieving greater customer satisfaction.',
+        'We shipped an internal RAG copilot that answers support questions with citations, reducing time-to-answer and improving consistency across the team.',
       link: '/blog3',
     },
     {
-      image: '/rayban.jpg',
-      title: 'Maximizing Amazon Presence for Ray-Ban',
+      image: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=1200&h=800&fit=crop&q=80',
+      title: 'SEO System that Increased Qualified Inbound',
       description:
-        'Our team used generative AI to automate responses, manage PPC ads, and handle customer inquiries for Ray-Bam. This substantially streamlined their operations and markedly boosted their ROI on Amazon.',
+        'We rebuilt the site structure, shipped on-page templates, and created a repeatable content cadence — producing inbound leads tied to high-intent queries.',
       link: '/blog2',
     },
   ];

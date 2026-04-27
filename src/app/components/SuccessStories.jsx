@@ -4,17 +4,17 @@ import CaseCard from "./CaseCard";
 export default function SuccessStories() {
   const cases = [
     {
-      image: '/now.png',
-      title: 'Transforming Support for Enterprise Software',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80',
+      title: 'AI Support Copilot for Faster Resolutions',
       description:
-        'We developed a Large-Language Model chatbot for ServiceNow that enabled support engineers to access real-time client performance data through natural language queries, doubling efficiency and achieving greater customer satisfaction.',
+        'We shipped an internal RAG copilot that answers support questions with citations, reducing time-to-answer and improving consistency across the team.',
       link: '/blog3',
     },
     {
-      image: '/bio.webp',
-      title: 'Revolutionizing Diagnostics for Biotech',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&q=80',
+      title: 'SaaS Website Rebuild that Increased Demo Requests',
       description:
-        'We helped a leading biotech company label, classify, and grade echocardiograms using advanced machine learning models. Our solution significantly improved diagnostic accuracy and dramatically reduced manual processing time.',
+        'We redesigned messaging, improved information architecture, and rebuilt the site for performance + SEO — leading to a measurable lift in qualified demos.',
       link: '/blog1',
     },
   ];

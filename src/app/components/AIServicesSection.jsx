@@ -8,30 +8,39 @@ const AIServicesSection = () => {
   const services = [
     {
       id: 1,
-      image: "/icardio.ai.logo.png",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&q=80",
       logo: null,
-      title: "AI-Driven Computer Vision Transforms Echocardiogram Analysis for Biotech, Enhancing Precision and Speed",
-      category: "Generative AI",
-      services: "AI Model Development, Medical Image Processing, Workflow Automation, Machine Learning Diagnostic",
+      title: "B2B SaaS redesign + SEO foundation that increased demo requests",
+      category: "Web Development • SEO • Conversion",
+      services: "UX/UI redesign, Next.js build, technical SEO, analytics + tracking",
       link: "/blog1"
     },
     {
       id: 2,
-      image: "/rayban.jpg",
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=800&fit=crop&q=80",
       logo: null,
-      title: "Generative AI Elevates Ray-Ban's Amazon Operations, Boosting Sales and Slashing Ad Costs",
-      category: "Generative AI, E-commerce, Customer Engagement, Digital Marketing",
-      services: "Listing and Ads Model Development, AI-Powered, PPC Optimization, E-commerce Production Automation",
+      title: "SEO content system for a services business to grow qualified inbound",
+      category: "SEO • Content • Reporting",
+      services: "Keyword architecture, templates, internal linking, on-page improvements",
       link: "/blog2"
     },
     {
       id: 3,
-      image: "/images.jfif",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80",
       logo: null,
-      title: "AI-Powered Chatbot Transforms Real-Time Support for Enterprise Software, Boosting Efficiency and Customer Satisfaction",
-      category: "Generative AI, IT Services, Customer Support, Data Analytics",
-      services: "Product Development, AI Chatbot Development/Workflow Automation, Large Language Model Integration, Big Data Processing",
-      link: "/blog2"
+      title: "Internal AI support copilot that reduced time-to-answer for agents",
+      category: "AI • Automation • Knowledge systems",
+      services: "RAG search, tool calling, evaluation, monitoring + guardrails",
+      link: "/blog3"
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop&q=80",
+      logo: null,
+      title: "Mobile app MVP launch with improved activation and retention",
+      category: "Mobile App • Product • Analytics",
+      services: "UX flows, UI system, API integration, analytics + iteration plan",
+      link: "/blog4"
     }
   ];
 

@@ -2,53 +2,56 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import BrandMark from "./BrandMark";
 
 export default function Header() {
   const pathname = usePathname();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const closeTimeoutRef = useRef(null);
 
   const services = [
-    { name: "Machine Learning Product Development", href:  "/service1" },
-    { name: "Large-Language-Model & GPT Integration", href: "/service2" },
-    { name: "AI-Powered App and Web Development", href: "/service3" },
-    { name: "AI-Driven Product Discovery", href: "/service4" },
+    { name: "Web Development", href: "/service1" },
+    { name: "SEO (Search Engine Optimization)", href: "/service2" },
+    { name: "Mobile App Development", href: "/service3" },
+    { name: "AI / ML / Deep Learning", href: "/service4" },
   ];
 
-  let closeTimeout;
   const handleMouseEnter = () => {
-    clearTimeout(closeTimeout);
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
     setIsServicesOpen(true);
   };
 
   const handleMouseLeave = () => {
-    closeTimeout = setTimeout(() => {
+    closeTimeoutRef.current = setTimeout(() => {
       setIsServicesOpen(false);
     }, 200);
   };
 
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    };
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
+    <header className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur border-b border-black/10 z-50">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* LOGO */}
-        <div className="flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="GenAI Labs Logo"
-            className="h-12 md:h-16 w-auto object-contain"
-          />
-          <span className="text-[24px] md:text-[30px] font-bold text-black">
-            TechOriginators
+        <Link href="/" className="flex items-center gap-3">
+          <BrandMark className="h-10 w-10 md:h-11 md:w-11" />
+          <span className="text-[20px] md:text-[24px] font-extrabold tracking-tight text-black">
+            TECH<span className="text-blue-600">ORIVA</span>
           </span>
-        </div>
+        </Link>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="hidden md:flex items-center gap-8">
           <Link
             href="/"
-            className={`text-sm font-medium hover:text-[#3C5CCC] transition ${
-              pathname === "/" ? "text-[#3C5CCC]" : "text-gray-700"
+            className={`text-sm font-medium hover:text-blue-600 transition ${
+              pathname === "/" ? "text-blue-600" : "text-neutral-700"
             }`}
           >
             Home
@@ -63,13 +66,13 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className={`text-sm font-medium hover:text-[#3C5CCC] transition ${
+              className={`text-sm font-medium hover:text-blue-600 transition ${
                 pathname.startsWith("/services")
-                  ? "text-[#3C5CCC]"
-                  : "text-gray-700"
+                  ? "text-blue-600"
+                  : "text-neutral-700"
               }`}
             >
-              Our Services
+              Services
             </button>
 
             {/* DROPDOWN MENU */}
@@ -85,8 +88,8 @@ export default function Header() {
                     href={service.href}
                     className={`block px-4 py-3 text-sm hover:bg-gray-50 transition ${
                       pathname === service.href
-                        ? "text-[#3C5CCC] font-medium bg-blue-50"
-                        : "text-gray-700"
+                        ? "text-blue-600 font-medium bg-blue-50"
+                        : "text-neutral-700"
                     }`}
                     onClick={() => setIsServicesOpen(false)}
                   >
@@ -99,17 +102,17 @@ export default function Header() {
 
           <Link
             href="/process"
-            className={`text-sm font-medium hover:text-[#3C5CCC] transition ${
-              pathname === "/process" ? "text-[#3C5CCC]" : "text-gray-700"
+            className={`text-sm font-medium hover:text-blue-600 transition ${
+              pathname === "/process" ? "text-blue-600" : "text-neutral-700"
             }`}
           >
-            Our Process
+            Process
           </Link>
 
           <Link
             href="/caseStudies"
-            className={`text-sm font-medium hover:text-[#3C5CCC] transition ${
-              pathname === "/caseStudies" ? "text-[#3C5CCC]" : "text-gray-700"
+            className={`text-sm font-medium hover:text-blue-600 transition ${
+              pathname === "/caseStudies" ? "text-blue-600" : "text-neutral-700"
             }`}
           >
             Case Studies
@@ -117,8 +120,8 @@ export default function Header() {
 
           <Link
             href="/contactUs"
-            className={`text-sm font-medium hover:text-[#3C5CCC] transition ${
-              pathname === "/contactUs" ? "text-[#3C5CCC]" : "text-gray-700"
+            className={`text-sm font-medium hover:text-blue-600 transition ${
+              pathname === "/contactUs" ? "text-blue-600" : "text-neutral-700"
             }`}
           >
             Contact Us
@@ -128,16 +131,16 @@ export default function Header() {
         {/* CTA BUTTON (Desktop) */}
         <Link
           href="/#calendar-section"
-          className="hidden md:block bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-8 py-3 rounded-full transition"
+          className="hidden md:block bg-black hover:bg-neutral-900 text-white text-sm font-semibold px-8 py-3 rounded-full transition"
         >
-          Book A Call
+          Get a Free Strategy Call
         </Link>
 
         {/* MOBILE MENU BUTTON */}
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-gray-700 hover:text-[#3C5CCC]"
+          className="md:hidden p-2 text-neutral-700 hover:text-blue-600"
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
@@ -178,8 +181,8 @@ export default function Header() {
           <nav className="px-6 py-4 space-y-1">
             <Link
               href="/"
-              className={`block py-3 text-sm font-medium hover:text-[#3C5CCC] transition ${
-                pathname === "/" ? "text-[#3C5CCC]" : "text-gray-700"
+              className={`block py-3 text-sm font-medium hover:text-blue-600 transition ${
+                pathname === "/" ? "text-blue-600" : "text-neutral-700"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -190,13 +193,13 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className={`w-full text-left py-3 text-sm font-medium hover:text-[#3C5CCC] transition flex items-center justify-between ${
+                className={`w-full text-left py-3 text-sm font-medium hover:text-blue-600 transition flex items-center justify-between ${
                   pathname.startsWith("/services")
-                    ? "text-[#3C5CCC]"
-                    : "text-gray-700"
+                    ? "text-blue-600"
+                    : "text-neutral-700"
                 }`}
               >
-                Our Services
+                Services
                 <span className={`transition-transform ${isServicesOpen ? "rotate-180" : ""}`}>
                   v
                 </span>
@@ -208,10 +211,10 @@ export default function Header() {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className={`block py-2 text-sm hover:text-[#3C5CCC] transition ${
+                      className={`block py-2 text-sm hover:text-blue-600 transition ${
                         pathname === service.href
-                          ? "text-[#3C5CCC] font-medium"
-                          : "text-gray-600"
+                          ? "text-blue-600 font-medium"
+                          : "text-neutral-600"
                       }`}
                       onClick={() => {
                         setIsServicesOpen(false);
@@ -227,18 +230,18 @@ export default function Header() {
 
             <Link
               href="/process"
-              className={`block py-3 text-sm font-medium hover:text-[#3C5CCC] transition ${
-                pathname === "/process" ? "text-[#3C5CCC]" : "text-gray-700"
+              className={`block py-3 text-sm font-medium hover:text-blue-600 transition ${
+                pathname === "/process" ? "text-blue-600" : "text-neutral-700"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Our Process
+              Process
             </Link>
 
             <Link
               href="/caseStudies"
-              className={`block py-3 text-sm font-medium hover:text-[#3C5CCC] transition ${
-                pathname === "/caseStudies" ? "text-[#3C5CCC]" : "text-gray-700"
+              className={`block py-3 text-sm font-medium hover:text-blue-600 transition ${
+                pathname === "/caseStudies" ? "text-blue-600" : "text-neutral-700"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -247,8 +250,8 @@ export default function Header() {
 
             <Link
               href="/contactUs"
-              className={`block py-3 text-sm font-medium hover:text-[#3C5CCC] transition ${
-                pathname === "/contactUs" ? "text-[#3C5CCC]" : "text-gray-700"
+              className={`block py-3 text-sm font-medium hover:text-blue-600 transition ${
+                pathname === "/contactUs" ? "text-blue-600" : "text-neutral-700"
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -258,29 +261,14 @@ export default function Header() {
             {/* MOBILE CTA BUTTON */}
             <Link
               href="/#calendar-section"
-              className="block mt-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-8 py-3 rounded-full transition text-center"
+              className="block mt-4 bg-black hover:bg-neutral-900 text-white text-sm font-semibold px-8 py-3 rounded-full transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Book A Call
+              Get a Free Strategy Call
             </Link>
           </nav>
         </div>
       )}
-
-      {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/923314480699"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-6 z-[60] h-14 w-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition flex items-center justify-center"
-      >
-        <img
-          src="https://cdn.simpleicons.org/whatsapp/ffffff"
-          alt="WhatsApp"
-          className="w-7 h-7"
-        />
-      </a>
     </header>
   );
 }

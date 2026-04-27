@@ -51,11 +51,10 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">
-                    Proven Expertise in LLM Implementation
+                    Product-minded delivery
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    From NLP-driven chatbots to workflow automation, we’ve implemented
-                    solutions that transform interactions and streamline operations across industries.
+                    We don’t just “build pages”. We design funnels, UX, and messaging around how customers decide — then implement it cleanly.
                   </p>
                 </div>
               </div>
@@ -67,11 +66,10 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">
-                    Tailored Solutions for Maximum Impact
+                    Clear scope, clear outcomes
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    No two businesses are the same, and neither are our solutions.
-                    We build AI products customized to your specific needs.
+                    You’ll always know what’s included, what’s not, and how success is measured — no surprises and no vague timelines.
                   </p>
                 </div>
               </div>
@@ -83,11 +81,10 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-1">
-                    Dedicated Team of AI Experts
+                    Senior team, fast communication
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Our team brings 30+ years of combined experience in AI, machine learning,
-                    NLP, computer vision, and predictive modeling.
+                    Weekly updates, async visibility, and a small senior team that ships — so you’re not stuck in agency layers.
                   </p>
                 </div>
               </div>

@@ -1,7 +1,20 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+:root {
+    --bg: #ffffff;
+    --fg: #0a0a0a;
+    --accent: #2563eb; /* blue-600 */
+}
+
+html,
+body {
+    background: var(--bg);
+    color: var(--fg);
+}
+
+::selection {
+    background: rgba(37, 99, 235, 0.25);
+}
 @keyframes marquee {
     0% {
         transform: translateX(0);

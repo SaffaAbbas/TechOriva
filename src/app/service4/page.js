@@ -1,7 +1,6 @@
 
 import CTASection from "../components/CtaSection";
 import Footer from "../components/Footer";
-import ServiceHero from "../components/ServiceHero";
 import ServiceHero2 from "../components/ServiceHero2";
 import SuccessStories from "../components/SuccessStories";
 import WhatWeOffer from "../components/WhatWeOffer";
@@ -11,31 +10,32 @@ export default function Services() {
     return (
         <>
             <ServiceHero2
-                badgeText="AI-Driven Product Discovery"
-                title="Uncovering Opportunities, Streamlining Processes, and Staying Ahead"
-                description="At GenAI Labs, we leverage AI to turn data into actionable insights, deeply analyzing your products, customer behaviors, and market trends. Our AI-driven discovery solutions reveal growth opportunities and process improvements, guiding you toward impactful innovations and strategic decisions."
-                imageSrc="/product.png" />
+                badgeText="AI / Machine Learning / Deep Learning"
+                title="AI features that ship — safely."
+                description="We help teams deploy copilots, RAG search, automation, and forecasting with the guardrails needed for production: evaluation, monitoring, and clear success metrics. You’ll get a solution that’s useful, safe, and measurable — not a demo that breaks in real life."
+                buttonText="Scope an AI project"
+                imageSrc="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&h=900&fit=crop&q=80" />
             <WhatWeOffer
                 services={[
                     {
-                        title: "Comprehensive Data Analysis",
-                        desc: "We start with a full audit of your data, examining customer behaviors, sales trends, and product metrics. Our AI-driven analysis identifies patterns and insights that reveal where you can make impactful changes, from feature enhancements to operational improvements.",
-                        img: "/data.png",
+                        title: "Use-case discovery",
+                        desc: "We start from ROI: where AI saves time, reduces cost, or increases conversion. Then we define scope, constraints, risk, and a safe rollout plan.",
+                        img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Market Trend Identification",
-                        desc: "With AI-powered trend analysis, we help you stay ahead of market shifts. Our models analyze data from across your industry, highlighting emerging trends, competitive positioning, and new market segments ripe for exploration, so you can strategically expand or pivot your product lines.",
-                        img: "/imarket.webp",
+                        title: "Data + knowledge integration",
+                        desc: "We connect your docs, tickets, CRM, and databases to AI safely (RAG), with access control, source citations, and quality checks.",
+                        img: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Opportunity Mapping and Strategy Development",
-                        desc: "Once we identify key insights, we map out new opportunities for growth and guide you through the strategic steps to capitalize on them. From refining existing offerings to creating innovative new products, we provide a clear roadmap that aligns with your business goals.",
-                        img: "/maping.webp",
+                        title: "Build + evaluation",
+                        desc: "Prompts, tools, and workflows — plus test sets and evaluation so you can trust outputs before it reaches users (and keep improving over time).",
+                        img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Continuous Improvement & Process Optimization",
-                        desc: "Our team focuses on maximizing your operational efficiency. We leverage AI to streamline processes, reduce bottlenecks, and optimize resources, ensuring that your products are delivered more efficiently and at higher quality.",
-                        img: "/scaling.webp",
+                        title: "Production rollout",
+                        desc: "Monitoring, feedback loops, and iteration — so the system improves over time instead of slowly drifting or degrading.",
+                        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=520&fit=crop&q=80",
                     },
                 ]} />
             <SuccessStories />

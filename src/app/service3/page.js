@@ -10,36 +10,37 @@ export default function Services() {
     return (
         <>
             <ServiceHero2
-                badgeText="AI-Powered App and Web Development"
-                title="Future-Proofing Your Digital Presence"
-                description="At GenAI Labs, we specialize in making LLMs work for your business. Whether it’s designing an advanced chatbot system, automating routine workflows, or enhancing the way you engage with customers, our team of experts tailors every solution to your specific needs, ensuring that your AI investments drive real results."
-                imageSrc="/Webai.png" />
+                badgeText="Mobile App Development"
+                title="Mobile apps users keep — and recommend."
+                description="We design and build iOS/Android apps that feel premium: fast onboarding, clear flows, and the engineering foundations needed for scale. You’ll get analytics from day one so you can improve activation, retention, and revenue with confidence."
+                buttonText="Plan my app"
+                imageSrc="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&h=900&fit=crop&q=80" />
             <WhatWeOffer
                 services={[
                     {
-                        title: "Strategy and Planning",
-                        desc: "We start by working closely with you to understand your digital goals and requirements. From user experience to backend efficiency, our strategic planning sessions outline the best approach to bring your vision to life, translating your business objectives into a structured development roadmap.",
-                        img: "/consult.webp",
+                        title: "Product strategy",
+                        desc: "We align features to user value, define an MVP that ships, and plan iteration so you don’t overbuild. Every screen has a purpose tied to a metric.",
+                        img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Custom AI Design and Prototyping",
-                        desc: "With cutting-edge tools and methods, we build prototypes that illustrate how LLMs can enhance your operations. We craft user-friendly, responsive designs and construct model architectures tailored to your business, including pipeline setups for seamless data integration.",
-                        img: "/design.jfif",
+                        title: "UX + UI design",
+                        desc: "Clickable prototypes, a small design system, and UI polish that feels “top app store” from the first version — clean, modern, and consistent.",
+                        img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "End-to-End Development",
-                        desc: "Our team handles the end-to-end development of your LLM solution, from training custom models to integrating APIs for smooth functionality within your platform. We rigorously test and fine-tune to ensure optimal accuracy, relevance, and scalability, delivering an AI that works seamlessly in real-world conditions.",
-                        img: "development.webp",
+                        title: "Build + integration",
+                        desc: "Auth, payments, push notifications, analytics, and APIs — engineered for speed and reliability with a maintainable codebase.",
+                        img: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Deployment and Adaptations",
-                        desc: "When your product is ready, we manage the deployment process, integrating it directly into your workflows. Our experience with cloud solutions ensures easy scalability to meet growing demands, while our adaptable architectures allow for easy expansion and enhancement.",
-                        img: "/scaling.webp",
+                        title: "Launch + store readiness",
+                        desc: "App store assets, QA, release management, and monitoring so launch day is calm and controlled — and you’re ready to iterate immediately after.",
+                        img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&h=520&fit=crop&q=80",
                     },
                     {
-                        title: "Ongoing Support and Evolution",
-                        desc: "We understand that LLMs thrive with ongoing improvements. Our support services include monitoring, regular updates, and optimizations to ensure that your AI remains reliable and up-to-date. We’re committed to a long-term partnership, keeping your AI solution effective as your business evolves.",
-                        img: "support.webp",
+                        title: "Iteration + growth",
+                        desc: "We use analytics + user feedback to ship the next improvements that move retention and revenue — not random feature requests.",
+                        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=520&fit=crop&q=80",
                     },
                 ]} />
             <SuccessStory3 />

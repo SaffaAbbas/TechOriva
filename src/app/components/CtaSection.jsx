@@ -1,14 +1,23 @@
+"use client";
 import Link from "next/link";
+import useInViewOnce from "./useInViewOnce";
 
 export default function CTASection({
   title = "Get Started Today",
-  description = "Ready to turn your AI vision into a tangible, impactful product? Reach out to us today, and let's start building your custom machine learning solution.",
-  buttonText = "Contact Us",
+  description = "Tell us what you’re building. We’ll respond with a clear plan, timeline, and quote — usually within 24–48 hours.",
+  buttonText = "Book a free strategy call",
   buttonHref = "/contactUs",
   sectionId = "contact-section"
 }) {
+  const { ref, isVisible } = useInViewOnce();
   return (
-    <section id={sectionId} className="bg-blue-800 py-12 px-4">
+    <section
+      ref={ref}
+      id={sectionId}
+      className={`bg-black py-12 px-4 transition-all duration-700 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+      }`}
+    >
       <div className="max-w-5xl mx-auto flex items-center justify-between flex-wrap gap-8">
         
         <div className="max-w-2xl">
@@ -26,7 +35,7 @@ export default function CTASection({
 
  <Link
           href={buttonHref}
-          className="bg-white text-blue-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-50 transition-colors flex items-center gap-2 shadow-lg"
+          className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-500 transition-colors flex items-center gap-2 shadow-lg"
         >
           {buttonText}
           <svg

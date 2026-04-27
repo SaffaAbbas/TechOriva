@@ -14,23 +14,22 @@ export default function CaseStudy1() {
             {/* Left Content */}
             <div className="flex-1 space-y-6">
               <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
-                AI-Driven Computer Vision Transforms{' '}
-                <span className="text-blue-600">Echocardiogram Analysis for Icardio.Ai,</span>
-                {' '}Enhancing Precision and Speed
+                Website rebuild for a B2B SaaS brand —{' '}
+                <span className="text-blue-600">improved conversion, speed, and SEO.</span>
               </h1>
               
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Category:</span>
                   <p className="text-gray-700 mt-1">
-                    Computer Vision, AI in Healthcare, Medical Imaging
+                    Web Development, UX/UI, Technical SEO, Analytics
                   </p>
                 </div>
                 
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Services:</span>
                   <p className="text-gray-700 mt-1">
-                    AI Model Development, Medical Image Processing, Workflow Automation, Machine Learning Integration
+                    Messaging + UX, design system, Next.js build, Core Web Vitals, tracking
                   </p>
                 </div>
               </div>
@@ -45,9 +44,9 @@ export default function CaseStudy1() {
                     {/* Screen Content */}
                     <div className="bg-black rounded-lg aspect-video flex items-center justify-center overflow-hidden">
                       <img 
-                        src="/icardio.ai.logo.png" 
-                        alt="UltraLinQ Cardio.ai"
-                        className="w-full h-full object-contain"
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&h=800&fit=crop&q=80" 
+                        alt="Website redesign preview"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
@@ -67,20 +66,20 @@ export default function CaseStudy1() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold mb-2">5,000,000+</div>
-              <div className="text-sm opacity-90">Echocardiograms analyzed</div>
+              <div className="text-3xl font-bold mb-2">+38%</div>
+              <div className="text-sm opacity-90">Demo requests</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">99.2%</div>
-              <div className="text-sm opacity-90">Accuracy in Analysis</div>
+              <div className="text-3xl font-bold mb-2">90+</div>
+              <div className="text-sm opacity-90">Performance targets</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">95%</div>
-              <div className="text-sm opacity-90">Reduction in Analysis time</div>
+              <div className="text-3xl font-bold mb-2">-28%</div>
+              <div className="text-sm opacity-90">Bounce rate</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">80%</div>
-              <div className="text-sm opacity-90">Enhanced diagnostic confidence</div>
+              <div className="text-3xl font-bold mb-2">4w</div>
+              <div className="text-sm opacity-90">Build to launch</div>
             </div>
           </div>
         </div>
@@ -91,32 +90,28 @@ export default function CaseStudy1() {
         <div className="bg-white rounded-lg shadow-sm border p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Challenge</h2>
           <p className="text-gray-700 mb-4">
-            LocalMx, a pioneering biotech company, sought a transformative solution to enhance the accuracy and efficiency of their 
-            echocardiogram analysis. Traditional analysis methods involved manually identifying and grading echocardiograms at each stage of the 
-            cardiac cycle, a process that was highly time-consuming and prone to human error.
+            The client had a strong product, but their site didn’t clearly communicate value. Messaging was vague, navigation was confusing, and performance issues hurt both SEO and conversion.
           </p>
           <p className="text-gray-700 mb-6">
-            The challenge was to develop an AI-driven solution that could accurately identify the cardiac phases in echocardiogram 
-            frames, determine which frame corresponds to which phase, and automatically extract critical insights from the data in an automatic, 
-            optimized straight way.
+            They needed a modern redesign that improved clarity, trust, and speed — without a long “agency-style” timeline.
           </p>
           
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>
-              <span className="text-gray-700">Time-intensive manual analysis processes</span>
+              <span className="text-gray-700">Unclear positioning and weak calls-to-action</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>
-              <span className="text-gray-700">Increased workload for the reviews</span>
+              <span className="text-gray-700">Slow pages impacting Core Web Vitals and rankings</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>
-              <span className="text-gray-700">Inability to analyze large data amounts in real speed</span>
+              <span className="text-gray-700">Information architecture that didn’t match buyer intent</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>
-              <span className="text-gray-700">Potential errors associated with traditional analysis</span>
+              <span className="text-gray-700">Limited tracking to measure what drove conversions</span>
             </li>
           </ul>
         </div>
@@ -160,20 +155,20 @@ export default function CaseStudy1() {
             {/* Related Study 1 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
              <div className="bg-teal-700 h-48 flex items-center justify-center">
-                <img src="/rayban.jpg" alt="Chatbot" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=1200&h=800&fit=crop&q=80" alt="SEO case study" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-3">
-                  Generative AI Supercharges Ray-Ban&apos;s Amazon Operations, Boosting Sales and Slashing Ad Costs
+                  SEO content system that increased qualified inbound
                 </h3>
                 <div className="text-sm text-gray-600 mb-4">
                   <div className="mb-2">
                     <span className="font-semibold">Category: </span>
-                    Generative AI, E-commerce, Customer Engagement
+                    SEO, Content, Reporting
                   </div>
                   <div>
                     <span className="font-semibold">Services: </span>
-                    Listing and Ads Model Development, PPC Optimization
+                    Keyword architecture, on-page templates, internal linking
                   </div>
                 </div>
                 <button 
@@ -188,20 +183,20 @@ export default function CaseStudy1() {
             {/* Related Study 2 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
               <div className="bg-teal-700 h-48 flex items-center justify-center">
-                <img src="/images.jfif" alt="Chatbot" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80" alt="AI copilot case study" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-3">
-                  AI-Powered Chatbot Transforms Real-Time Support for Enterprise Software
+                  Internal AI support copilot for faster resolutions
                 </h3>
                 <div className="text-sm text-gray-600 mb-4">
                   <div className="mb-2">
                     <span className="font-semibold">Category: </span>
-                    Generative AI, IT Services, Customer Support
+                    AI, Automation, Knowledge systems
                   </div>
                   <div>
                     <span className="font-semibold">Services: </span>
-                    AI Chatbot Development, Workflow Automation
+                    RAG search, evaluation, monitoring + guardrails
                   </div>
                 </div>
                 <button 

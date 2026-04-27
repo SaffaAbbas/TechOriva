@@ -14,23 +14,22 @@ export default function CaseStudy2() {
             {/* Left Content */}
             <div className="flex-1 space-y-6">
               <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
-               Generative AI Supercharges Ray-Ban's{' '}
-                <span className="text-blue-600">Amazon Operations, Boosting Sales and</span>
-                {' '}Slashing Ad Costs
+               SEO content system for a services business —{' '}
+                <span className="text-blue-600">more qualified inbound, less guesswork.</span>
               </h1>
               
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Category:</span>
                   <p className="text-gray-700 mt-1">
-                    Generative AI, E-commerce, Customer Engagement, Digital Advertising
+                    SEO, Content Strategy, On-page Optimization
                   </p>
                 </div>
                 
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Services:</span>
                   <p className="text-gray-700 mt-1">
-                    Large Language Model Deployment, AI Integration, PPC Optimization, Customer Interaction Automation
+                    Keyword architecture, on-page templates, internal linking, reporting
                   </p>
                 </div>
               </div>
@@ -45,9 +44,9 @@ export default function CaseStudy2() {
                     {/* Screen Content */}
                     <div className="bg-black rounded-lg aspect-video flex items-center justify-center overflow-hidden">
                       <img 
-                        src="/rayban.jpg" 
-                        alt="UltraLinQ Cardio.ai"
-                        className="w-full h-full object-contain"
+                        src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=1200&h=800&fit=crop&q=80" 
+                        alt="SEO content system preview"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
@@ -91,7 +90,7 @@ export default function CaseStudy2() {
         <div className="bg-white rounded-lg shadow-sm border p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Challenge</h2>
             <p className="text-gray-700 mb-4">
-            Ray-Ban, a world-renowned leader in the sunglasses industry, sought to elevate their Amazon presence and drive better results in customer interactions and advertising performance. With increasing competition in e-commerce, Ray-Ban needed a solution that could streamline customer engagement, optimize their pay-per-click (PPC) advertising strategy, and boost sales while cutting costs. The company was looking for innovative ways to harness the power of AI to achieve these goals.
+            The client was publishing content, but rankings were inconsistent and leads were unpredictable. The site structure didn’t match search intent, internal linking was weak, and on-page templates were inconsistent.
           </p>
           
           <ul className="space-y-3">
@@ -118,7 +117,7 @@ export default function CaseStudy2() {
         <div className="bg-[#EEF1FA] rounded-lg shadow-sm border p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Solution</h2>
           <p className="text-gray-700 mb-6">
-            Our team partnered with Ray-Ban to implement advanced Generative AI models tailored for their e-commerce operations. The AI-driven solution streamlined customer interactions by automating responses, handling inquiries in real time, and enhancing the overall shopping experience on Amazon. Additionally, we revamped their PPC strategy by leveraging AI models to analyze ad performance and optimize bidding, resulting in reduced costs and increased ad efficiency.
+            We shipped a repeatable SEO system: keyword architecture mapped to services, clean templates for high-intent pages, and a publishing cadence backed by reporting tied to conversions.
           </p>
           
           <ul className="space-y-3">
@@ -132,7 +131,7 @@ export default function CaseStudy2() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>
-              <span className="text-gray-700">Seamless integration with Ray-Ban’s existing Amazon operati</span>
+              <span className="text-gray-700">Site architecture aligned to buyer intent</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-blue-600 mt-1">✓</span>

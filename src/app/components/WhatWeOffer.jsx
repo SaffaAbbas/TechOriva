@@ -142,7 +142,6 @@ export default function WhatWeOffer({
   ],
   heading = "What We",
   highlightedText = "Offer",
-  logo = "/logo.png",
 }) {
   return (
     <section className="bg-white py-16 sm:py-20">
@@ -150,12 +149,22 @@ export default function WhatWeOffer({
 
         {/* Logo + Heading */}
         <div className="flex flex-col items-center mb-10 sm:mb-16">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 mb-3 sm:mb-4">
-            <img
-              src={logo}
-              alt="Section Logo"
-              className="w-full h-full object-contain"
-            />
+          <div className="w-14 h-14 sm:w-16 sm:h-16 mb-3 sm:mb-4 rounded-2xl bg-gradient-to-br from-black to-neutral-700 flex items-center justify-center shadow-[0_18px_45px_rgba(0,0,0,0.15)] ring-1 ring-black/5">
+            <svg
+              viewBox="0 0 24 24"
+              width="26"
+              height="26"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              <path d="M3.3 7.9L12 12.9l8.7-5" />
+              <path d="M12 22V13" />
+            </svg>
           </div>
 
           <h2 className="text-2xl sm:text-4xl font-bold text-center">

@@ -100,39 +100,39 @@ const handleSubmit = async (e) => {
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-6">
+    <section className="bg-neutral-50 py-16 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
         <div className="space-y-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-            Reach Out and Connect <br />
-            With <span className="text-indigo-600">TechOriginators</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-black leading-tight">
+            Let’s talk goals, scope, and timelines. <br />
+            <span className="text-blue-600">We’ll keep it simple.</span>
           </h2>
 
-          <div className="space-y-6 text-gray-700">
+          <div className="space-y-6 text-neutral-700">
             <div className="flex items-start gap-4">
-              <Mail className="text-indigo-600 mt-1" />
+              <Mail className="text-blue-600 mt-1" />
               <div>
                 <p className="font-semibold">Email Address</p>
-                <p className="text-sm">info@techoriginators.com</p>
+                <p className="text-sm">tech@oriva.com</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <Phone className="text-indigo-600 mt-1" />
+              <Phone className="text-blue-600 mt-1" />
               <div>
                 <p className="font-semibold">Phone No</p>
-                <p className="text-sm">  (+92) 331 4480699</p>
+                <p className="text-sm">+1 (555) 013-2026</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* RIGHT FORM */}
-        <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(79,70,229,0.15)] border border-gray-100 p-8 w-full">
-          <h3 className="text-lg font-semibold mb-6 text-gray-900">
-            Schedule your <span className="text-indigo-600">free consultation!</span>
+        <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.10)] border border-black/5 p-8 w-full">
+          <h3 className="text-lg font-semibold mb-6 text-black">
+            Get a <span className="text-blue-600">free strategy call</span>
           </h3>
           {error && (
   <p className="text-red-500 text-sm font-medium">
@@ -144,23 +144,23 @@ const handleSubmit = async (e) => {
             <input
               type="text"
               name="fullName"
-              placeholder="Full Name"
+              placeholder="Full name*"
               value={formData.fullName}
-              className="w-full px-4 py-3 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-3 rounded-lg bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={handleChange}
             />
 
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Work email*"
               value={formData.email}
-              className="w-full px-4 py-3 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-3 rounded-lg bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={handleChange}
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="w-full rounded-lg border border-gray-300 bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500">
+              <div className="w-full rounded-lg border border-neutral-300 bg-neutral-100 focus-within:ring-2 focus-within:ring-blue-500">
                 <PhoneInput
                   country={"us"}
                   value={formData.phone}
@@ -169,7 +169,7 @@ const handleSubmit = async (e) => {
                   }
                   containerClass="!w-full"
                   inputClass="!w-full !h-[48px] !bg-transparent !border-none !rounded-r-lg focus:!ring-0 focus:!outline-none"
-                  buttonClass="!border-0 !border-r !border-gray-300 !bg-transparent !rounded-l-lg"
+                  buttonClass="!border-0 !border-r !border-neutral-300 !bg-transparent !rounded-l-lg"
                   dropdownClass="!z-50"
                   enableSearch
                   countryCodeEditable={false}
@@ -180,7 +180,7 @@ const handleSubmit = async (e) => {
               <select
                 name="budget"
                 value={formData.budget}
-                className="w-full px-4 py-3 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-4 py-3 rounded-lg bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 onChange={handleChange}
               >
                 <option value="">Budget</option>
@@ -190,13 +190,13 @@ const handleSubmit = async (e) => {
               </select>
             </div>
 
-            <label className="flex items-center gap-2 text-sm text-gray-700">
-              <ShieldCheck className="text-indigo-600 w-4 h-4" />
+            <label className="flex items-center gap-2 text-sm text-neutral-700">
+              <ShieldCheck className="text-blue-600 w-4 h-4" />
               <input
                 type="checkbox"
                 name="nda"
                 checked={formData.nda}
-                className="accent-indigo-600"
+                className="accent-blue-600"
                 onChange={handleChange}
               />
               Protect with an NDA
@@ -204,19 +204,19 @@ const handleSubmit = async (e) => {
 
             <textarea
               name="message"
-              placeholder="Description"
+              placeholder="What do you want to build?"
               rows="3"
               value={formData.message}
-              className="w-full px-4 py-3 rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-full px-4 py-3 rounded-lg bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               onChange={handleChange}
             />
 
             <button
   type="submit"
   disabled={loading}
-  className="w-full bg-indigo-600 text-white py-3 rounded-full font-semibold hover:bg-indigo-700 transition disabled:opacity-60"
+  className="w-full bg-black text-white py-3 rounded-full font-semibold hover:bg-neutral-900 transition disabled:opacity-60"
 >
-  {loading ? "Sending..." : "Submit"}
+  {loading ? "Sending..." : "Request a call"}
 </button>
 
           </form>
@@ -247,7 +247,7 @@ const handleSubmit = async (e) => {
             <button
               type="button"
               onClick={closeSuccessModal}
-              className="w-full bg-indigo-600 text-white py-2.5 rounded-full font-semibold hover:bg-indigo-700 transition"
+              className="w-full bg-black text-white py-2.5 rounded-full font-semibold hover:bg-neutral-900 transition"
             >
               OK
             </button>

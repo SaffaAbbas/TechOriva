@@ -55,8 +55,8 @@ export default function PipelinePhases() {
             },
           ],
          tools: [
-  { name: 'Google Docs', image: '/doc.png' },
-  { name: 'Trello', image: '/trello.png' },
+  { name: 'Google Docs', image: 'https://cdn.simpleicons.org/googledocs/4285F4' },
+  { name: 'Trello', image: 'https://cdn.simpleicons.org/trello/0052CC' },
 ],
         },
       },
@@ -79,8 +79,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'High-fidelity mockups', description: 'Detailed designs with final colors, typography, and imagery' },
           ],
           tools: [
-            { name: 'Figma', image: '/figma.png' },
-            { name: 'Adobe', image: '/adobe.webp' },
+            { name: 'Figma', image: 'https://cdn.simpleicons.org/figma/F24E1E' },
+            { name: 'Adobe', image: 'https://cdn.simpleicons.org/adobe/FF0000' },
           ],
         },
       },
@@ -103,8 +103,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Risk Assessment', description: 'Identifying potential delays and mitigation strategies' },
           ],
           tools: [
-            { name: 'Jira', image: '/jira.png' },
-            { name: 'Excel', image: '/excel.jpg' },
+            { name: 'Jira', image: 'https://cdn.simpleicons.org/jira/0052CC' },
+            { name: 'Sheets', image: 'https://cdn.simpleicons.org/googlesheets/34A853' },
           ],
         },
       },
@@ -129,8 +129,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Feature Engineering', description: 'Creating meaningful features that improve model performance' },
           ],
            tools: [
-            { name: 'Python', image: '/python.png' },
-            { name: 'SQL', image: '/sql.webp' },
+            { name: 'Python', image: 'https://cdn.simpleicons.org/python/3776AB' },
+            { name: 'PostgreSQL', image: 'https://cdn.simpleicons.org/postgresql/4169E1' },
           ],
         },
       },
@@ -153,8 +153,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Performance Metrics', description: 'Tracking accuracy, precision, recall, and other key metrics' },
           ],
            tools: [
-            { name: 'TensorFlow', image: '/tensor.png' },
-            { name: 'PyCharm', image: '/pycharm.webp' },
+            { name: 'TensorFlow', image: 'https://cdn.simpleicons.org/tensorflow/FF6F00' },
+            { name: 'Jupyter', image: 'https://cdn.simpleicons.org/jupyter/F37626' },
           ],
         },
       },
@@ -177,8 +177,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Automated Testing', description: 'CI/CD pipelines for continuous testing and deployment' },
           ],
            tools: [
-            { name: 'GitHub', image: '/git.webp' },
-            { name: 'Jest', image: '/jest.webp' },
+            { name: 'GitHub', image: 'https://cdn.simpleicons.org/github/181717' },
+            { name: 'Playwright', image: 'https://cdn.simpleicons.org/playwright/2EAD33' },
           ],
         },
       },
@@ -201,8 +201,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Security Hardening', description: 'Implementing security best practices and compliance requirements' },
           ],
            tools: [
-            { name: 'AWS', image: '/aws.webp' },
-            { name: 'Docker', image: '/docker.webp' },
+            { name: 'Vercel', image: 'https://cdn.simpleicons.org/vercel/000000' },
+            { name: 'Docker', image: 'https://cdn.simpleicons.org/docker/2496ED' },
           ],
         },
       },
@@ -225,8 +225,8 @@ export default function PipelinePhases() {
             { number: 2, title: 'Regular Updates', description: 'Monthly reports on system performance and recommendations' },
           ],
            tools: [
-            { name: 'DataDog', image: '/datadog.png' },
-            { name: 'New Relic', image: '/newRelic.webp' },
+            { name: 'Datadog', image: 'https://cdn.simpleicons.org/datadog/632CA6' },
+            { name: 'Sentry', image: 'https://cdn.simpleicons.org/sentry/362D59' },
           ],
         },
       },
@@ -357,13 +357,15 @@ export default function PipelinePhases() {
                     <div className="flex gap-4">
                       {activeContent.tools.map((tool, index) => (
                         <div key={index} className="flex items-center gap-2 px-4 py-10 rounded-lg">
-                          <Image
+                          <img
                             src={tool.image}
                             alt={tool.name}
                             width={80}
                             height={80}
-                            className="object-contain"
+                            className="h-12 w-12 object-contain"
+                            loading="lazy"
                           />
+                          <span className="text-sm font-medium text-gray-700">{tool.name}</span>
                         </div>
                       ))}
                     </div>

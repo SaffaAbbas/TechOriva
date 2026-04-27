@@ -106,7 +106,7 @@ export default function ContactCaseSection() {
         <div className="space-y-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
             Ready to transform your business <br />
-            with AI? <span className="text-white">Let's start building!</span>
+            with AI? <span className="text-white">Let&apos;s start building!</span>
           </h2>
         </div>
 

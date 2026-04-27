@@ -209,7 +209,7 @@ export default function CalendarSection() {
           </p>
           <p className="text-indigo-600 font-semibold text-lg mb-6">at {formatTime12Hour(selectedTime)}</p>
           <p className="text-gray-500">
-            We'll send a confirmation to <strong>{scheduledEmail}</strong> with all the details.
+            We&apos;ll send a confirmation to <strong>{scheduledEmail}</strong> with all the details.
           </p>
           {apiMessage && <p className="text-green-600 mt-3">{apiMessage}</p>}
           <button
@@ -254,7 +254,7 @@ export default function CalendarSection() {
                   </svg>
                 </button>
               )}
-              <div className="text-sm text-gray-500 mb-1">TechOriginators</div>
+              <div className="text-sm text-gray-500 mb-1">TECHORIVA</div>
               <h3 className="text-xl font-bold mb-4">Free Consultation + Quote</h3>
 
               <div className="flex items-center gap-2 text-gray-600 mb-4">
@@ -430,7 +430,7 @@ export default function CalendarSection() {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      We'd love to hear what you're working on. Share some info on what you're looking to build.
+                      We&apos;d love to hear what you&apos;re working on. Share some info on what you&apos;re looking to build.
                     </label>
                     <textarea
                       name="message"

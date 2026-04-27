@@ -10,16 +10,16 @@ export default function Process() {
     return (
         <>
             <CaseHero
-                badge="Contact Us"
-                heading="Let's build this thing Together."
+                badge="Contact"
+                heading="Tell us what you’re building."
                 description={null}
             />
             <ContactSection />
-            <TechSlider showHeading={false} bgColor="bg-[#EEF1FA]" heightClass="py-6" />
+            <TechSlider showHeading={false} bgColor="bg-neutral-50" heightClass="py-6" />
             <CTASection
-                title="Get Started Today"
-                description="Ready to turn your AI vision into a tangible, impactful product? Reach out to us today, and let’s start building your custom machine learning solution."
-                buttonText="Read Case Studies"
+                title="Want proof before you commit?"
+                description="Explore real work across SaaS websites, SEO systems, mobile apps, and AI copilots — and see how TECHORIVA ships outcomes."
+                buttonText="View case studies"
                 buttonHref="/caseStudies"
             />
             <Footer />

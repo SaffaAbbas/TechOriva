@@ -14,23 +14,23 @@ export default function CaseStudy3() {
             {/* Left Content */}
             <div className="flex-1 space-y-6">
               <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
-                AI-Powered Chatbot{' '}
-                <span className="text-blue-600">Transforms Support for Enterprise Software,</span>
-                {' '}Boosting Efficiency and Customer Satisfaction
+                Internal AI support copilot{' '}
+                <span className="text-blue-600">that reduced time-to-answer</span>
+                {' '}and improved consistency
               </h1>
               
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Category:</span>
                   <p className="text-gray-700 mt-1">
-                    Generative AI, IT Services, Customer Support, Data Analytics
+                    AI, Automation, Knowledge systems
                   </p>
                 </div>
                 
                 <div>
                   <span className="text-blue-600 font-semibold text-lg">Services:</span>
                   <p className="text-gray-700 mt-1">
-                   Product Development, AI Chatbot Development,Workflow Automation, LLM intergration, Big Data Processing
+                   RAG search, tool calling, evaluation, monitoring + guardrails
                   </p>
                 </div>
               </div>
@@ -45,9 +45,9 @@ export default function CaseStudy3() {
                     {/* Screen Content */}
                     <div className="bg-black rounded-lg aspect-video flex items-center justify-center overflow-hidden">
                       <img 
-                        src="/images.jfif" 
-                        alt="UltraLinQ Cardio.ai"
-                        className="w-full h-full object-contain"
+                        src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80" 
+                        alt="AI support copilot preview"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export default function CaseStudy3() {
         <div className="bg-[#EEF1FA] rounded-lg shadow-sm border p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Solution</h2>
           <p className="text-gray-700 mb-6">
-            We managed the development of a cutting-edge AI-powered chatbot designed to provide real-time answers to support engineers' queries about client system performance. This solution enabled instant access to critical data, allowing engineers to troubleshoot faster and more effectively, resulting in improved customer satisfaction and reduced downtime.
+            We managed the development of a cutting-edge AI-powered chatbot designed to provide real-time answers to support engineers&apos; queries about client system performance. This solution enabled instant access to critical data, allowing engineers to troubleshoot faster and more effectively, resulting in improved customer satisfaction and reduced downtime.
           </p>
           
           <ul className="space-y-3">
@@ -150,20 +150,20 @@ export default function CaseStudy3() {
             {/* Related Study 1 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
              <div className="bg-teal-700 h-48 flex items-center justify-center">
-                <img src="/rayban.jpg" alt="Chatbot" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=1200&h=800&fit=crop&q=80" alt="SEO case study" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-3">
-                  Generative AI Supercharges Ray-Ban&apos;s Amazon Operations, Boosting Sales and Slashing Ad Costs
+                  SEO content system that increased qualified inbound
                 </h3>
                 <div className="text-sm text-gray-600 mb-4">
                   <div className="mb-2">
                     <span className="font-semibold">Category: </span>
-                    Generative AI, E-commerce, Customer Engagement
+                    SEO, Content, Reporting
                   </div>
                   <div>
                     <span className="font-semibold">Services: </span>
-                    Listing and Ads Model Development, PPC Optimization
+                    Keyword architecture, on-page templates, internal linking
                   </div>
                 </div>
                 <button 
@@ -178,20 +178,20 @@ export default function CaseStudy3() {
             {/* Related Study 2 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
               <div className="bg-teal-700 h-48 flex items-center justify-center">
-                <img src="/icardio.ai.logo.png" alt="Chatbot" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&h=800&fit=crop&q=80" alt="Website case study" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-3">
-                 AI-Driven Computer Vision Transforms Echocardiogram Analysis for Icardio.AI, Enhancing Precision and Speed
+                 B2B SaaS website rebuild that increased demo requests
                 </h3>
                 <div className="text-sm text-gray-600 mb-4">
                   <div className="mb-2">
                     <span className="font-semibold">Category: </span>
-                   Computer Vision, AI in Healthcare, Medical Imaging
+                   Web Development, UX/UI, Technical SEO
                   </div>
                   <div>
                     <span className="font-semibold">Services: </span>
-                    AI Model Development, Medical Image Processing, Workflow Automation, Machine Learning Integration
+                    Messaging, design system, Next.js build, analytics
                   </div>
                 </div>
                 <button 
