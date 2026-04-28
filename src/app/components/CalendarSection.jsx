@@ -254,7 +254,7 @@ export default function CalendarSection() {
                   </svg>
                 </button>
               )}
-              <div className="text-sm text-gray-500 mb-1">TECHORIVA</div>
+              <div className="text-sm text-gray-500 mb-1">DEVLYS</div>
               <h3 className="text-xl font-bold mb-4">Free Consultation + Quote</h3>
 
               <div className="flex items-center gap-2 text-gray-600 mb-4">

@@ -67,7 +67,7 @@ export default function Hero() {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            TECHORIVA — modern digital delivery for teams that want results.
+            DEVLYS — modern digital delivery for teams that want results.
           </h2>
 
           <h1

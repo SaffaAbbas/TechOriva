@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ServiceHero2({
   badgeText = "Full-Service Machine Learning Product Development",
   title = "Turning Vision into Reality",
-  description = `TECHORIVA helps teams design, build, and grow digital products — fast, measurable, and without agency chaos.`,
+  description = `DEVLYS helps teams design, build, and grow digital products — fast, measurable, and without agency chaos.`,
   buttonText = "Book a free consult",
   imageSrc = "/openai.jfif",
   bgColor = "bg-[#eef1fb]",

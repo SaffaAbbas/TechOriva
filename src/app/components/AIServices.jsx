@@ -9,7 +9,7 @@ export default function AIServices() {
       {/* MAIN SECTION */}
       <section
         ref={ref}
-        className={`relative bg-neutral-50 py-10 pb-40 overflow-visible transition-all duration-700 ${
+        className={`relative bg-neutral-50 py-10 pb-10 md:pb-40 overflow-visible transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
@@ -33,8 +33,8 @@ export default function AIServices() {
           <h3 className="text-3xl font-semibold text-blue-600 mt-1">built to drive measurable growth</h3>
         </div>
 
-        {/* OVERLAPPING cards */}
-        <div className=" absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-1/2 w-full max-w-5xl px-6 z-20">
+        {/* Cards (overlap on desktop only) */}
+        <div className="relative mt-8 w-full max-w-5xl mx-auto px-6 z-20 md:absolute md:left-1/2 md:bottom-0 md:translate-x-[-50%] md:translate-y-1/2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             
             <div className={`bg-white rounded-2xl p-8 text-left transition shadow-[0_0_30px_rgba(0,0,0,0.12)] ${
@@ -92,7 +92,7 @@ export default function AIServices() {
       </section>
 
       {/* SPACER (VERY IMPORTANT) */}
-    <div className="h-96 md:h-48"></div>
+    <div className="hidden md:block h-48" />
 
       {/* NORMAL cards BELOW */}
       <section className="bg-white pb-10 sm:pb-16">

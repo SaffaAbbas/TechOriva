@@ -18,7 +18,7 @@ export default function Process() {
             <TechSlider showHeading={false} bgColor="bg-neutral-50" heightClass="py-6" />
             <CTASection
                 title="Want proof before you commit?"
-                description="Explore real work across SaaS websites, SEO systems, mobile apps, and AI copilots — and see how TECHORIVA ships outcomes."
+                description="Explore real work across SaaS websites, SEO systems, mobile apps, and AI copilots — and see how DEVLYS ships outcomes."
                 buttonText="View case studies"
                 buttonHref="/caseStudies"
             />

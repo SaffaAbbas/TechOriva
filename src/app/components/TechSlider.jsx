@@ -36,23 +36,27 @@ export default function TechSlider({ showHeading = true, bgColor = "bg-white", h
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >
-      {showHeading && (
-        <h2 className="text-center text-2xl md:text-2xl font-semibold text-black mb-10">
+      {showHeading ? (
+        <h2 className="text-center text-xl md:text-2xl font-semibold text-black mb-6 md:mb-10 px-4">
+          Technologies <span className="text-blue-600">we ship with</span>
+        </h2>
+      ) : (
+        <h2 className="text-center text-xl font-semibold text-black mb-6 px-4 md:hidden">
           Technologies <span className="text-blue-600">we ship with</span>
         </h2>
       )}
 
       <div className="relative w-full">
-        <div className={`absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r ${isWhite ? "from-white" : "from-gray-100"} to-transparent z-10`} />
-        <div className={`absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l ${isWhite ? "from-white" : "from-gray-100"} to-transparent z-10`} />
+        <div className={`absolute left-0 top-0 bottom-0 w-0 sm:w-10 md:w-20 bg-gradient-to-r ${isWhite ? "from-white" : "from-gray-100"} to-transparent z-10`} />
+        <div className={`absolute right-0 top-0 bottom-0 w-0 sm:w-10 md:w-20 bg-gradient-to-l ${isWhite ? "from-white" : "from-gray-100"} to-transparent z-10`} />
 
-        <div className="flex gap-14 animate-marquee-tech whitespace-nowrap items-center">
+        <div className="flex gap-8 md:gap-14 animate-marquee-tech whitespace-nowrap items-center">
           {doubled.map((tech, i) => (
-            <div key={i} className="flex items-center justify-center min-w-[80px]">
+            <div key={i} className="flex items-center justify-center min-w-[56px] md:min-w-[80px]">
               <img
                 src={tech.logo}
                 alt={tech.name}
-                className="h-14 w-14 object-contain"
+                className="h-10 w-10 md:h-14 md:w-14 object-contain"
               />
             </div>
           ))}

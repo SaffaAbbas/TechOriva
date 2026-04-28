@@ -26,8 +26,8 @@ export async function POST(req) {
 
         // 📧 Send Email
         await transporter.sendMail({
-            from: "Website Inquiry <no-reply@techoriginaotors.com>",
-            to: "dev@techoriginators.com",
+            from: "Website Inquiry <no-reply@devlys.com>",
+            to: "dev@devlys.com",
             subject: "New Contact Form Submission",
             html: `
         <div style="font-family: Arial, sans-serif;">

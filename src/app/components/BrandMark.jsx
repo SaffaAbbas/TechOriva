@@ -6,7 +6,7 @@ export default function BrandMark({ className = "h-10 w-10" }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
-      aria-label="TECHORIVA"
+      aria-label="DEVLYS"
     >
       <defs>
         <linearGradient id="tch_g" x1="10" y1="10" x2="56" y2="56" gradientUnits="userSpaceOnUse">
@@ -33,18 +33,19 @@ export default function BrandMark({ className = "h-10 w-10" }) {
       {/* Outer ring */}
       <circle cx="32" cy="32" r="22" stroke="url(#tch_g)" strokeWidth="3.5" opacity="0.95" />
 
-      {/* Tech "T" monogram */}
+      {/* Devlys "D" monogram */}
       <path
-        d="M20 22h24"
-        stroke="#0B1220"
+        d="M24 18v28"
+        stroke="url(#tch_g)"
         strokeWidth="6"
         strokeLinecap="round"
       />
       <path
-        d="M32 22v24"
-        stroke="url(#tch_g)"
+        d="M24 18h12c8 0 14 6 14 14s-6 14-14 14H24"
+        stroke="#0B1220"
         strokeWidth="6"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
 
       {/* Accent node */}

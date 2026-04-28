@@ -46,9 +46,7 @@ export default function WhyChooseUs() {
             <div className="space-y-8">
               {/* Item 1 */}
               <div className="flex gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100">
-                  <Sparkles className="w-10 h-10 text-gray-800" />
-                </div>
+                <Sparkles className="w-10 h-10 text-gray-800 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-lg mb-1">
                     Product-minded delivery
@@ -61,9 +59,7 @@ export default function WhyChooseUs() {
 
               {/* Item 2 */}
               <div className="flex gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100">
-                  <SlidersHorizontal className="w-10 h-10 text-gray-800" />
-                </div>
+                <SlidersHorizontal className="w-10 h-10 text-gray-800 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-lg mb-1">
                     Clear scope, clear outcomes
@@ -76,9 +72,7 @@ export default function WhyChooseUs() {
 
               {/* Item 3 */}
               <div className="flex gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100">
-                  <Users className="w-10 h-10 text-gray-800" />
-                </div>
+                <Users className="w-10 h-10 text-gray-800 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-lg mb-1">
                     Senior team, fast communication

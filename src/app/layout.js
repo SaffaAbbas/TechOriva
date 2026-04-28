@@ -8,9 +8,9 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "TECHORIVA — Web, SEO, Mobile & AI",
+  title: "DEVLYS — Web, SEO, Mobile & AI",
   description:
-    "TECHORIVA is a modern digital agency delivering high-performing websites, SEO, mobile apps, and AI/ML solutions.",
+    "DEVLYS is a modern digital agency delivering high-performing websites, SEO, mobile apps, and AI/ML solutions.",
 };
 
 export default function RootLayout({ children }) {

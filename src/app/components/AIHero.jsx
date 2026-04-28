@@ -26,7 +26,7 @@ export default function AIHero() {
           </h2>
 
           <p className="mt-5 text-neutral-600 max-w-xl leading-relaxed">
-            TECHORIVA blends conversion-first design, performance engineering, and SEO systems so your next launch looks premium — and generates leads you can measure.
+            DEVLYS blends conversion-first design, performance engineering, and SEO systems so your next launch looks premium — and generates leads you can measure.
           </p>
 
           <ul className="mt-6 space-y-3 text-sm text-neutral-700">

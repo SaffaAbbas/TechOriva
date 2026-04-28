@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <BrandMark className="h-11 w-11" />
             <span className="text-2xl font-extrabold tracking-tight text-black">
-              TECH<span className="text-blue-600">ORIVA</span>
+              DEV<span className="text-blue-600">LYS</span>
             </span>
           </div>
           <p className="mt-4 text-sm text-neutral-600 max-w-xs">
@@ -55,7 +55,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3">
               <MailIcon className="w-4 h-4 text-blue-600" />
-              tech@oriva.com
+              tech@devlys.com
             </li>
           </ul>
         </div>
@@ -139,7 +139,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-black/10 py-4 text-center text-sm font-normal text-neutral-500">
-        © 2026 TECHORIVA. All rights reserved.
+        © 2026 DEVLYS. All rights reserved.
       </div>
     </footer>
   );

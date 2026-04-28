@@ -115,7 +115,7 @@ const handleSubmit = async (e) => {
               <Mail className="text-blue-600 mt-1" />
               <div>
                 <p className="font-semibold">Email Address</p>
-                <p className="text-sm">tech@oriva.com</p>
+                <p className="text-sm">tech@devlys.com</p>
               </div>
             </div>
 

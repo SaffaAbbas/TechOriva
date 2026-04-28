@@ -16,7 +16,7 @@ export default function ServiceHero() {
           </h1>
 
           <p className="text-gray-600 text-base leading-relaxed max-w-xl mb-8">
-            TECHORIVA helps teams design, build, and grow digital products. Expect clear scope, fast iterations, and a measurable result — not vague “agency work”.
+            DEVLYS helps teams design, build, and grow digital products. Expect clear scope, fast iterations, and a measurable result — not vague “agency work”.
           </p>
 
           <button className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium px-7 py-4 rounded-full transition">

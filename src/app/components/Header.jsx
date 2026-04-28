@@ -42,7 +42,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <BrandMark className="h-10 w-10 md:h-11 md:w-11" />
           <span className="text-[20px] md:text-[24px] font-extrabold tracking-tight text-black">
-            TECH<span className="text-blue-600">ORIVA</span>
+            DEV<span className="text-blue-600">LYS</span>
           </span>
         </Link>
 
