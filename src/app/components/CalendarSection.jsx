@@ -154,7 +154,7 @@ export default function CalendarSection() {
         scheduleDateTime: formatScheduleDateTime(currentYear, currentMonth, selectedDate, selectedTime),
       };
 
-      const response = await fetch('https://common-services.vercel.app/api/contact', {
+      const response = await fetch('https://common-services.vercel.app/api/contact/devlys', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

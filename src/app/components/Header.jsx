@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import BrandMark from "./BrandMark";
 
 export default function Header() {
   const pathname = usePathname();
@@ -12,10 +12,10 @@ export default function Header() {
   const closeTimeoutRef = useRef(null);
 
   const services = [
-    { name: "Web Development", href: "/service1" },
-    { name: "SEO (Search Engine Optimization)", href: "/service2" },
-    { name: "Mobile App Development", href: "/service3" },
-    { name: "AI / ML / Deep Learning", href: "/service4" },
+    { name: "Web Development", href: "/services/web-development" },
+    { name: "SEO (Search Engine Optimization)", href: "/services/seo" },
+    { name: "Mobile App Development", href: "/services/mobile-app-development" },
+    { name: "AI / ML / Deep Learning", href: "/services/ai-ml-deep-learning" },
   ];
 
   const handleMouseEnter = () => {
@@ -40,7 +40,14 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3">
-          <BrandMark className="h-10 w-10 md:h-11 md:w-11" />
+          <Image
+            src="/final_logo.png"
+            alt="Devlys logo"
+            width={44}
+            height={44}
+            className="h-10 w-10 md:h-11 md:w-11 object-contain"
+            priority
+          />
           <span className="text-[20px] md:text-[24px] font-extrabold tracking-tight text-black">
             DEV<span className="text-blue-600">LYS</span>
           </span>

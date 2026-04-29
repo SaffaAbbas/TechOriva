@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServiceHero2({
   badgeText = "Full-Service Machine Learning Product Development",
   title = "Turning Vision into Reality",
   description = `DEVLYS helps teams design, build, and grow digital products — fast, measurable, and without agency chaos.`,
   buttonText = "Book a free consult",
+  buttonHref,
   imageSrc = "/openai.jfif",
   bgColor = "bg-[#eef1fb]",
   onButtonClick,
@@ -27,13 +29,24 @@ export default function ServiceHero2({
             {description}
           </p>
 
-          <button
-            onClick={onButtonClick}
-            className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium px-7 py-4 rounded-full transition"
-          >
-            {buttonText}
-            <span className="text-lg">→</span>
-          </button>
+          {buttonHref ? (
+            <Link
+              href={buttonHref}
+              className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium px-7 py-4 rounded-full transition"
+            >
+              {buttonText}
+              <span className="text-lg">→</span>
+            </Link>
+          ) : (
+            <button
+              type="button"
+              onClick={onButtonClick}
+              className="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-medium px-7 py-4 rounded-full transition"
+            >
+              {buttonText}
+              <span className="text-lg">→</span>
+            </button>
+          )}
         </div>
 
         {/* RIGHT IMAGE */}

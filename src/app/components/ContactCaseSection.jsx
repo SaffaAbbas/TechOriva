@@ -58,7 +58,7 @@ export default function ContactCaseSection() {
         ...(formData.message ? { description: formData.message } : {}),
       };
 
-      const res = await fetch("https://common-services.vercel.app/api/contact", {
+      const res = await fetch("https://common-services.vercel.app/api/contact/devlys", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

@@ -17,6 +17,10 @@ import { useState } from 'react';
 export default function PipelinePhases() {
   const [activePhase, setActivePhase] = useState('specifications');
 
+  const TOOL_FALLBACKS = {
+    Adobe: 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_logo.svg',
+  };
+
   const phases = {
     phaseA: [
       {
@@ -80,7 +84,7 @@ export default function PipelinePhases() {
           ],
           tools: [
             { name: 'Figma', image: 'https://cdn.simpleicons.org/figma/F24E1E' },
-            { name: 'Adobe', image: 'https://cdn.simpleicons.org/adobe/FF0000' },
+            { name: 'Adobe', image: '/adobe.webp' },
           ],
         },
       },
@@ -178,7 +182,7 @@ export default function PipelinePhases() {
           ],
            tools: [
             { name: 'GitHub', image: 'https://cdn.simpleicons.org/github/181717' },
-            { name: 'Playwright', image: 'https://cdn.simpleicons.org/playwright/2EAD33' },
+            { name: 'Playwright', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-plain.svg' },
           ],
         },
       },
@@ -364,6 +368,14 @@ export default function PipelinePhases() {
                             height={80}
                             className="h-12 w-12 object-contain"
                             loading="lazy"
+                            onError={(e) => {
+                              const img = e.currentTarget;
+                              if (img.dataset.fallbackApplied === 'true') return;
+                              const fallback = TOOL_FALLBACKS[tool.name];
+                              if (!fallback) return;
+                              img.dataset.fallbackApplied = 'true';
+                              img.src = fallback;
+                            }}
                           />
                           <span className="text-sm font-medium text-gray-700">{tool.name}</span>
                         </div>

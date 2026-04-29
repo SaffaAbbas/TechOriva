@@ -49,7 +49,7 @@ const handleSubmit = async (e) => {
       ...(formData.message ? { description: formData.message } : {}),
     };
 
-    const res = await fetch("https://common-services.vercel.app/api/contact", {
+    const res = await fetch("https://common-services.vercel.app/api/contact/devlys", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -115,7 +115,7 @@ const handleSubmit = async (e) => {
               <Mail className="text-blue-600 mt-1" />
               <div>
                 <p className="font-semibold">Email Address</p>
-                <p className="text-sm">tech@devlys.com</p>
+                <p className="text-sm">info.devlys@gmail.com</p>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ const handleSubmit = async (e) => {
               <Phone className="text-blue-600 mt-1" />
               <div>
                 <p className="font-semibold">Phone No</p>
-                <p className="text-sm">+1 (555) 013-2026</p>
+                <p className="text-sm">+92 313 5424935</p>
               </div>
             </div>
           </div>

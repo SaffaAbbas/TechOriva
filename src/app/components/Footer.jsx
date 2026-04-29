@@ -1,8 +1,9 @@
 'use client';
 
 import { Facebook, Instagram, Linkedin, MailIcon, PhoneIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-import BrandMark from "./BrandMark";
 import useInViewOnce from "./useInViewOnce";
 
 export default function Footer() {
@@ -32,7 +33,13 @@ export default function Footer() {
         {/* Logo */}
         <div className="lg:pr-10">
           <div className="flex items-center gap-2">
-            <BrandMark className="h-11 w-11" />
+            <Image
+              src="/final_logo.png"
+              alt="Devlys logo"
+              width={44}
+              height={44}
+              className="h-11 w-11 object-contain"
+            />
             <span className="text-2xl font-extrabold tracking-tight text-black">
               DEV<span className="text-blue-600">LYS</span>
             </span>
@@ -51,11 +58,21 @@ export default function Footer() {
           <ul className="mt-4 space-y-4 text-sm text-neutral-600">
             <li className="flex gap-3">
               <PhoneIcon className="w-4 h-4 text-blue-600" />
-              +1 (555) 013-2026
+              <a
+                href="tel:+923135424935"
+                className="hover:text-blue-600 transition"
+              >
+                +92 313 5424935
+              </a>
             </li>
             <li className="flex gap-3">
               <MailIcon className="w-4 h-4 text-blue-600" />
-              tech@devlys.com
+              <a
+                href="mailto:info.devlys@gmail.com"
+                className="hover:text-blue-600 transition"
+              >
+                info.devlys@gmail.com
+              </a>
             </li>
           </ul>
         </div>

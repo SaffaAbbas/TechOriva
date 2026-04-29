@@ -8,6 +8,7 @@ const AIServicesSection = () => {
   const services = [
     {
       id: 1,
+      anchorId: "web",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop&q=80",
       logo: null,
       title: "B2B SaaS redesign + SEO foundation that increased demo requests",
@@ -17,6 +18,7 @@ const AIServicesSection = () => {
     },
     {
       id: 2,
+      anchorId: "seo",
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=800&fit=crop&q=80",
       logo: null,
       title: "SEO content system for a services business to grow qualified inbound",
@@ -26,6 +28,7 @@ const AIServicesSection = () => {
     },
     {
       id: 3,
+      anchorId: "ai",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop&q=80",
       logo: null,
       title: "Internal AI support copilot that reduced time-to-answer for agents",
@@ -35,6 +38,7 @@ const AIServicesSection = () => {
     },
     {
       id: 4,
+      anchorId: "mobile",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop&q=80",
       logo: null,
       title: "Mobile app MVP launch with improved activation and retention",
@@ -54,6 +58,7 @@ const AIServicesSection = () => {
         {services.map((service) => (
           <div 
             key={service.id} 
+            id={service.anchorId}
             className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition shadow-[0_0_30px_rgba(0,0,0,0.15)]"
           >
             <div className="flex flex-col md:flex-row gap-6 p-6">
