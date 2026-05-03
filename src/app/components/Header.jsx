@@ -126,6 +126,15 @@ export default function Header() {
           </Link>
 
           <Link
+            href="/portfolio"
+            className={`text-sm font-medium hover:text-blue-600 transition ${
+              pathname === "/portfolio" ? "text-blue-600" : "text-neutral-700"
+            }`}
+          >
+            Portfolio
+          </Link>
+
+          <Link
             href="/contactUs"
             className={`text-sm font-medium hover:text-blue-600 transition ${
               pathname === "/contactUs" ? "text-blue-600" : "text-neutral-700"
@@ -253,6 +262,16 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Case Studies
+            </Link>
+
+            <Link
+              href="/portfolio"
+              className={`block py-3 text-sm font-medium hover:text-blue-600 transition ${
+                pathname === "/portfolio" ? "text-blue-600" : "text-neutral-700"
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Portfolio
             </Link>
 
             <Link
