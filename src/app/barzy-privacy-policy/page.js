@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Privacy Policy — Barzy: QR & Barcode Scanner",
     description:
-      "Privacy Policy for Barzy for Android. Zero personal data collection, 100% on-device processing, no ads or tracking.",
+      "Privacy Policy for Barzy. Zero personal data collection, 100% on-device processing, no ads or tracking.",
     url: "https://devlys.com/barzy-privacy-policy",
     siteName: "DEVLYS",
     type: "website",

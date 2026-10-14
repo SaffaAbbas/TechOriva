@@ -143,7 +143,7 @@ export default function BarzyPrivacyPolicy() {
             />
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-blue-600 font-heading">
-                Android App Privacy Policy
+                App Privacy Policy
               </div>
               <div className="text-sm text-slate-500">
                 Barzy: QR &amp; Barcode Scanner — by <strong>DEVLYS</strong>
@@ -246,7 +246,7 @@ export default function BarzyPrivacyPolicy() {
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  Barzy: QR &amp; Barcode Scanner (&quot;Barzy&quot;, &quot;the app&quot;, &quot;we&quot;, &quot;us&quot;) is a QR code and barcode scanner and generator for Android, developed by DEVLYS. This policy explains what the app does with your information. Our website is <a href="https://devlys.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">https://devlys.com</a>.
+                  Barzy: QR &amp; Barcode Scanner (&quot;Barzy&quot;, &quot;the app&quot;, &quot;we&quot;, &quot;us&quot;) is a QR code and barcode scanner and generator, developed by DEVLYS. This policy explains what the app does with your information. Our website is <a href="https://devlys.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">https://devlys.com</a>.
                 </p>
               </div>
             </section>
@@ -305,7 +305,7 @@ export default function BarzyPrivacyPolicy() {
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  Barzy asks for the camera permission so it can scan QR codes and barcodes. The camera feed is processed on your device in real time. Camera images and the contents of scanned codes are not uploaded or shared by us. You can deny or revoke the camera permission in your Android settings; the camera scanner will then not work, but you can still create QR codes and scan from gallery images.
+                  Barzy asks for the camera permission so it can scan QR codes and barcodes. The camera feed is processed on your device in real time. Camera images and the contents of scanned codes are not uploaded or shared by us. You can deny or revoke the camera permission in your device settings; the camera scanner will then not work, but you can still create QR codes and scan from gallery images.
                 </p>
               </div>
             </section>
@@ -317,7 +317,7 @@ export default function BarzyPrivacyPolicy() {
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  If you choose an image from your gallery to scan, you select it through the Android system photo picker. Barzy only receives the image you choose, does not need access to your whole photo library, and processes the image on your device only.
+                  If you choose an image from your gallery to scan, you select it through your device&apos;s system photo picker. Barzy only receives the image you choose, does not need access to your whole photo library, and processes the image on your device only.
                 </p>
               </div>
             </section>
@@ -353,7 +353,7 @@ export default function BarzyPrivacyPolicy() {
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  Barzy can open links, and can save or share QR code images, only when you choose to. Links open in your browser or another app on your device, and those websites and apps have their own privacy policies, which we do not control. When you share or save a QR code, you choose the destination using the standard Android share sheet.
+                  Barzy can open links, and can save or share QR code images, only when you choose to. Links open in your browser or another app on your device, and those websites and apps have their own privacy policies, which we do not control. When you share or save a QR code, you choose the destination using your device&apos;s standard share sheet.
                 </p>
               </div>
             </section>
@@ -372,7 +372,7 @@ export default function BarzyPrivacyPolicy() {
                     <strong>Camera:</strong> to scan QR codes and barcodes.
                   </li>
                   <li>
-                    <strong>Vibration:</strong> to give optional haptic feedback after a scan. This is a normal Android permission and does not access personal data. You can turn this feedback off in the app settings.
+                    <strong>Vibration:</strong> to give optional haptic feedback after a scan. This is a normal device permission and does not access personal data. You can turn this feedback off in the app settings.
                   </li>
                 </ul>
               </div>
@@ -385,7 +385,7 @@ export default function BarzyPrivacyPolicy() {
               </h2>
               <div className="text-slate-700 text-sm sm:text-base leading-relaxed space-y-3">
                 <p>
-                  This version of Barzy does not include advertising, analytics, crash-reporting or other third-party tracking services. Your device&apos;s operating system and Google Play services may process certain data according to Google&apos;s own privacy policy, which is outside our control. If a future version adds services such as ads or analytics, we will update this policy and the Google Play Data safety section before release.
+                  This version of Barzy does not include advertising, analytics, crash-reporting or other third-party tracking services. Your device&apos;s operating system and platform services (such as Google Play or Apple App Store) may process certain data according to their own privacy policies, which are outside our control. If a future version adds services such as ads or analytics, we will update this policy and the relevant store data safety disclosures before release.
                 </p>
               </div>
             </section>
