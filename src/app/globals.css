@@ -43,7 +43,20 @@ body {
 }
 
 body {
-    font-family: var(--font-nunito);
+    font-family: var(--font-urbanist), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-grotesk), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.025em;
+}
+
+.font-grotesk {
+    font-family: var(--font-grotesk), sans-serif;
+}
+
+.font-urbanist {
+    font-family: var(--font-urbanist), sans-serif;
 }
 
 /* Hide scrollbar but keep scrolling */

@@ -155,8 +155,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-black/10 py-4 text-center text-sm font-normal text-neutral-500">
-        © 2026 DEVLYS. All rights reserved.
+      <div className="border-t border-black/10 py-4 text-center text-sm font-normal text-neutral-500 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <span>© 2026 DEVLYS. All rights reserved.</span>
+        <span>•</span>
+        <Link href="/privacy-policy" className="hover:text-blue-600 transition">
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );

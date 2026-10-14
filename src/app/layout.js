@@ -1,10 +1,20 @@
-import { Nunito, Nunito_Sans } from "next/font/google";
+import { Urbanist, Hanken_Grotesk } from "next/font/google";
 import Header from "./components/Header";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import "./globals.css";
-const nunito = Nunito({
-  variable: "--font-nunito",
+
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-grotesk",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
@@ -15,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${nunito.variable} antialiased`}>
+    <html lang="en" className={`${urbanist.variable} ${hankenGrotesk.variable}`}>
+      <body className="antialiased">
         <Header />
         <main className="pt-[84px] md:pt-[92px]">
           {children}
